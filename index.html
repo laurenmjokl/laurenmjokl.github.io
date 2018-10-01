@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "description" content = "Welcome to Lauren Jokl's personal website, written, designed, and developed by Lauren Jokl.">
+	<meta name = "keywords" content = "Lauren Jokl, Jokl, Personal, Website, Personal Website, Projects, Project, Portfolio, Web Development, HTML, CSS, JavaScript, PHP, Technical, Software Engineer, Software, Engineer, Programming, Web Project, Profile, GitHub, GitHub Pages">
+	<meta name = "author" content = "Lauren Jokl">
+	<meta name = "ROBOTS" CONTENT = "INDEX, FOLLOW">
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta property="og:url" content="http://laurenmjokl.github.io" />
+	<meta property="og:title" content="Lauren Jokl's Personal Website" />
+	<meta property="og:description" content = "Personal GitHub Website" />
+	
+
+	<link rel="icon" href="http://ksooklal.comuv.com/Images/CherryBlossoms.JPG">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js'></script>
+	<script src='app/app.js'></script>
+	<style type='text/css'>
+		html, body{
+			background-color: lightskyblue;
+			height: 100%;
+			min-width:200px;
+		}
+		
+		td{
+			padding: 10px;
+		}
+
+		#wrap {
+			min-height: 100%;
+		}
+
+		#main {
+			overflow:auto;
+			padding-bottom: 55px; /* Adjustable to customize based on space needs */
+		}
+
+		#footer {
+			position: relative;
+			margin-top: -55px; 
+			height: 55px;
+			clear:both;
+		} 
+
+		/*Opera Fix*/
+		body:before {
+			content:"";
+			height:100%;
+			float:left;
+			width:0;
+			margin-top:-32767px;
+		}
+	</style>
+	<title>Lauren Jokl's GitHub Page</title>
+</head>
+<body>
+	<div id = 'wrap'><div id = 'main'>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header" id = 'header'>
+					<a class="navbar-brand" id = 'headerBar' ng-click='ic.focusOn($event)' href="">Lauren Jokl's GitHub Website</a>
+				</div>
+			</div>
+		</nav>
+		<br/>
+		
+		<div id = 'siteCounter' style = 'width:98%; margin-left: 15px; margin-bottom: 20px'>
+			<a href="http://www.freecounterstat.com" target="_Blank" style="display:none" title="hit counter">hit counter</a><br/>
+			<font size = '6'>Visits since 6/27/2015:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+			<script type="text/javascript" src="js/counter.js"></script><script>$("#counterImage").height(40);$("#counterImage").attr("title", "");</script>
+        </div>
+	</div></div>
+
+	<table class = 'footer' id = 'footer' class = 'table' style = 'background-color: LightBlue; width:100%;'>
+		<tr id = 'contact'>
+			<td><strong><div style = 'margin-left:5px;'>Contact Me:</div></strong></td>
+			<td><a href="https://github.com/laurenmjokl"><img title="GitHub" alt="GitHub" src="images/GitHub Icon.png" height="35" /></a></td>
+			<td><a href='https://www.linkedin.com/in/lauren-jokl-028baa94/'><img title="LinkedIn" alt="LinkedIn" src="images/LinkedIn Icon.jpg" height="35" /></a></td>	
+			<td><a href = "mailto:lauren.m.jokl@accenturefederal.com?subject=Your%20GitHub%20Website&amp;body=Hi%2C%0A%0AI'm%20reaching%20out%20to%20you%20after%20visiting%20your%20website%20({{ic.domainName}}).%0A%0AYour%20Name%20Here%0AYour%20Email/Contact%20Info%20Here"><img title = 'Email' alt = 'Email' src = 'images/Yahoo! Icon.jpg' height = '35' /></a></td>
+		</tr>
+	</table>
+</body>
+</html>
