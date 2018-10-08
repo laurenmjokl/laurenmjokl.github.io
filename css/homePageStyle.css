@@ -1,0 +1,44 @@
+{
+		html, body{
+			background-color: lightskyblue;
+			height: 100%;
+			min-width:200px;
+		}
+		
+		td{
+			padding: 10px;
+		}
+
+		#wrap {
+			min-height: 100%;
+		}
+
+		#main {
+			overflow:auto;
+			padding-bottom: 55px; /* Adjustable to customize based on space needs */
+		}
+
+		#footer {
+			position: relative;
+			margin-top: -55px; 
+			height: 55px;
+			clear:both;
+		} 
+		
+		#laurensWebsiteVisitsCounter{
+			margin-left: 10px;
+		}
+    
+    #contactMe{
+      margin-left:5px;
+    }
+		
+		/*Opera Fix*/
+		body:before {
+			content:"";
+			height:100%;
+			float:left;
+			width:0;
+			margin-top:-32767px;
+		}
+}
