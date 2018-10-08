@@ -26,8 +26,12 @@ td{
 	width:100%;
 } 
 		
-#laurensWebsiteVisitsCounter{
+#laurensWebsiteVisits{
 	margin-left: 10px;
+}
+
+laurensWebsiteVisitsCounterCaption{
+	padding-right: 5px;	
 }
     
 #contactMe{
