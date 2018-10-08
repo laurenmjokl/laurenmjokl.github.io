@@ -22,46 +22,7 @@
 	<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js'></script>
 	<script src='app/app.js'></script>
-	<style type='text/css'>
-		html, body{
-			background-color: lightskyblue;
-			height: 100%;
-			min-width:200px;
-		}
-		
-		td{
-			padding: 10px;
-		}
-
-		#wrap {
-			min-height: 100%;
-		}
-
-		#main {
-			overflow:auto;
-			padding-bottom: 55px; /* Adjustable to customize based on space needs */
-		}
-
-		#footer {
-			position: relative;
-			margin-top: -55px; 
-			height: 55px;
-			clear:both;
-		} 
-		
-		#laurensWebsiteVisitsCounter{
-			margin-left: 10px;
-		}
-		
-		/*Opera Fix*/
-		body:before {
-			content:"";
-			height:100%;
-			float:left;
-			width:0;
-			margin-top:-32767px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/homePageStyle.css">
 	<title>Lauren Jokl's GitHub Page</title>
 </head>
 <body>
@@ -89,7 +50,7 @@
 
 	<table class = 'footer' id = 'footer' class = 'table' style = 'background-color: LightBlue; width:100%;'>
 		<tr id = 'contact'>
-			<td><strong><div style = 'margin-left:5px;'>Contact Me:</div></strong></td>
+			<td><strong><div id = 'contactMe' style = 'margin-left:5px;'>Contact Me:</div></strong></td>
 			<td><a href="https://github.com/laurenmjokl"><img title="GitHub" alt="GitHub" src="http://kristiansooklal.me/images/GitHub%20Icon.png" height="35" /></a></td>
 			<td><a href='https://www.linkedin.com/in/lauren-jokl-028baa94/'><img title="LinkedIn" alt="LinkedIn" src="http://kristiansooklal.me/images/LinkedIn%20Icon.jpg" height="35" /></a></td>	
 			<td><a href = "mailto:lauren.m.jokl@accenturefederal.com?subject=Your%20GitHub%20Website&amp;body=Hi%2C%0A%0AI'm%20reaching%20out%20to%20you%20after%20visiting%20your%20website%20https://laurenmjokl.github.io/.%0A%0AYour%20Name%20Here%0AYour%20Email/Contact%20Info%20Here"><img title = 'Email' alt = 'Email' src = 'https://botw-pd.s3.amazonaws.com/styles/logo-thumbnail/s3/0015/2593/brand.gif' height = '35' /></a></td>
