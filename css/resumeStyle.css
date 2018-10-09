@@ -1,0 +1,50 @@
+html, body{
+	background-color: #A0CFEC; 
+	background-attachment:fixed;
+	margin: 5px;
+	padding: 0;
+	min-width: 1000px;
+	min-height: 1300px;
+}
+
+#pdf {
+	margin: 2em auto;
+	border: 4px solid #6699FF;
+	height: 1250px;
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pdf p {
+	padding: 1em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#pdf object {
+	display: block;
+	border: solid 1px #666;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#statement {
+	padding: 1em;
+	margin: 1em;
+	border: solid 4px #FFF;
+	font-size: medium;
+	font-weight: bold;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.success {
+	background: #00CC33;
+	color: #FFFFFF;
+}
+
+.fail {
+	background: #FF3366;
+	color: #FFFFFF;
+}
