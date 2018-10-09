@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <!-- Website title (shown in browser tab) -->
+  <title>Lauren M. Jokl's Resume</title>
+  <link rel="shortcut icon" href="images/lauren.ico" />
+  <link rel="stylesheet" type="text/css" href="css/resumeStyle.css">
+  
+  <!-- Latest compiled and minified Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified Bootstrap JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	
+	<!-- JQuery Imports -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://cdn.jsdelivr.net/jquery.scrollto/2.1.0/jquery.scrollTo.min.js"></script>
+	
+	<!-- Angular Import -->
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.js'></script>
+  
+  <!-- PDF Code -->
+  <script type = "text/javascript" src = "http://kristiansooklal.me/Resume/pdfobject.js"></script>
+  <script type="text/javascript">
+    window.onload = function (){	
+      var msg;
+      var s = document.getElementById("statement");	
+      var params = { 
+        url: "Lauren Jokl Resume.pdf",
+        pdfOpenParams: {
+          zoom: '100',
+          pagemode: 'thumbs',
+          toolbar: '1',
+          statusbar: '0',
+          scrollbar: '1',
+          messages: '0', 
+          navpanes: '0',
+        }
+      };
+      var myPDF = new PDFObject(params).embed("pdf");
+      if(myPDF){
+        msg = "The PDF was successfully embedded!";
+        s.className = "success";
+      } else {
+        msg = "It appears the embed didn't work.";
+        s.className = "fail";
+      }
+      s.innerHTML = msg;
+    };
+    </script>
+	</head>
+
+  <body>
+    <div id = 'wrap'><div id = 'main'>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header" id = 'header'>
+            <a class="navbar-brand" id = 'headerBar' ng-click='ic.focusOn($event)' href="">Lauren Jokl's Resume</a>
+				  </div>
+				  <div>
+            <ul class="nav navbar-nav">
+              <li id = 'home'><a href = "../">Home</a></li>
+						  <li id = 'resume'><a>Resume</a></li>
+					  </ul>
+          </div>
+        </div>
+      </nav>
+
+		  <div id = "pdf">It appears you don't have Adobe Reader or PDF support in this web browser. Click  
+        <strong><a href = "Lauren Jokl Resume.pdf">here</a></strong> to download the PDF
+      </div>
+  </body>
+</html>
