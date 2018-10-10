@@ -19,9 +19,11 @@ body:before {
 
 #wrap {
 	min-height: 100%;
+	background-color: lightskyblue;
 }
 
 #main {
+	background-color: lightskyblue;
 	overflow:auto;
 	padding-bottom: 55px; /* Adjustable to customize based on space needs */
 }
