@@ -69,3 +69,12 @@ body:before {
 	background: #FF3366;
 	color: #FFFFFF;
 }
+
+#footer {
+	position: relative;
+	margin-top: -55px; 
+	height: 55px;
+	clear:both;
+	background-color: LightBlue; 
+	width:100%;
+}
